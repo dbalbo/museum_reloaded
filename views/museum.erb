@@ -15,13 +15,13 @@
     <form action='/museums/<%= @museum.id %>' method='post'>
 
       <input id='id' name='id' type='hidden' value='<%= @museum.id %>'>
-     
+
       <label for='description'><em>Add An Artwork to this Museum</em></label>
 
       <input id= 'description' name='description' type='text' required="true">
       <button type='submit' class=' btn btn-info'>Add a Museum</button>
     </form>
-</div> 
+</div>
 
 <br>
 <br>
@@ -29,7 +29,7 @@
 <br>
 
 <div class='form-group'>
-  
+
   <form action='/museums/<%= @museum.id %>' method='post'>
       <input name='_method' type='hidden' value='patch'>
 
