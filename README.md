@@ -2,7 +2,7 @@ Museum Tracker
 
 A small web app that shows museums and can add, delete, edit and list both Museums and the artwork that is in them.
 
-GitHub Link: 
+GitHub Link:
 
  is a small app that allows a user to view teams attending. It also allows a Coordinator to add teams, and view all members of that team. It also allows the adding of team members. Made for an assesment at Epicodus. Installation
 
@@ -22,7 +22,7 @@ Authoed by :Debbie Balbo Lisence
 
 MIT Lisence (c) 2015 Debbie Balbo
 
-work in progress***
+
 
 database schema can be created following these instructions:
 
