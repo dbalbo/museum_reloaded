@@ -15,4 +15,11 @@ describe(Museum) do
 			expect(test_museum1).to(eq(test_museum2))
 		end
 	end
+	describe('#save') do
+		it('saves a list of museums in an array') do
+			test_museum = Museum.new({:name => "The Guggenheim", :id => 1})
+			test_museum.save
+			expect(Museum.all).to(eq([test_museum]))
+		end
+	end
 end
