@@ -37,4 +37,8 @@ class Artwork
     found_artwork
   end
 
+
+  define_method(:delete) do
+    DB.exec("DELETE FROM artworks WHERE id = #{self.id};")
+  end
 end
