@@ -27,4 +27,14 @@ class Artwork
 		self.description.==(another_artwork.description).&(self.id.==(another_artwork.id))
 	end
 
+	  define_singleton_method(:find) do |id|
+    found_artwork = nil
+    Artwork.all().each() do |artwork|
+      if artwork.id().==(id)
+        found_artwork = artwork
+      end
+    end
+    found_artwork
+  end
+
 end

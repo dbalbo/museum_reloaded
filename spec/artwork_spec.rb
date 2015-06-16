@@ -23,4 +23,13 @@ describe(Artwork)  do
       expect(test_artwork1).to(eq(test_artwork2))
     end
   end
+  describe('.find') do
+  	it('returns the artwork by its id') do
+  		test_artwork = Artwork.new({:description => 'Circles', :id => nil, :museum_id => 2})
+      test_artwork.save()
+      test_artwork2 = Artwork.new({:description => 'Sunflowers', :id => nil, :museum_id => 3})
+      test_artwork2.save()
+      expect(Artwork.find(test_artwork.id())).to(eq(test_artwork))
+    end
+  end
 end
