@@ -22,4 +22,14 @@ describe(Museum) do
 			expect(Museum.all).to(eq([test_museum]))
 		end
 	end
+
+	describe('.find') do
+		it('returns a museum by its id') do
+			test_museum = Museum.new({:name => "The Guggenheim", :id => nil})
+			test_museum.save
+			test_museum2 = Museum.new({:name => "The Met", :id => nil})
+			test_museum2.save
+			expect(Museum.find(test_museum.id)).to(eq(test_museum))
+		end
+	end
 end
