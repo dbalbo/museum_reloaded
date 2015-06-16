@@ -1,0 +1,33 @@
+<div class= 'jumbotron'>
+
+
+<div class='lead'>
+	<h1><em><strong>National Museum Database</em></strong></h1>
+</div>
+
+	<div class='lead'>
+		<h3>Here are a List of Museums:</h3>
+		<br>
+		<h4>Click on a Museum to See the Artwork Within:</h4>
+	</div>	
+
+
+<ul>
+
+  <% @museums.each do |museum| %>
+  <li><a href="/museums/<%= museum.id %>"><%= museum.name %></a></li>
+  <% end %>
+</ul>
+
+<br>
+
+
+<form action="/" method="post">
+  <div class="form-group">
+    <label for ="name">Add a Museum to the National Database:</label>
+    <input id="name" name="name" class="form-control" type="text" required="true">
+  </div>
+  <button type="submit" class=" btn btn-info">Add Museum!</button>
+</form>
+
+</div>
