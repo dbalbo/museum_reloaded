@@ -1,10 +1,14 @@
 Museum Tracker
 
-A small web app that shows museums and can add, delete, edit and list both Museums and the artwork that is in them.
+A small web app written in Ruby and uses a manual psql database that shows museums and can add, delete, edit and list both museums and the artwork that is in them.
 
-GitHub Link:
+It demonstrates RESTful routing capabilities and manual database use. Made for an assesment at Epicodus.
 
- is a small app that allows a user to view teams attending. It also allows a Coordinator to add teams, and view all members of that team. It also allows the adding of team members. Made for an assesment at Epicodus. Installation
+languages used: HTML CSS PSQL RUBY 
+
+	RSPEC, CAPYBARA (for unit testing and integration testing, respectively)
+
+Installation
 
 Museuum_Tracker Ruby 2.1.3 You will need to install the bundle gem. In your terminal, navigate to the project directory and run this command:
 
@@ -16,11 +20,13 @@ $ ruby app.rb
 
 In your web browser, enter this url: http://localhost:4567
 
-A work in progress
 
-Authoed by :Debbie Balbo Lisence
 
-MIT Lisence (c) 2015 Debbie Balbo
+Authored by: Debbie Balbo 
+
+Lisence:
+
+MIT License (c) 2015 Debbie Balbo
 
 
 
